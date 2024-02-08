@@ -1,76 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 3px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add position relative for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+.container1 {
+    text-align: center; /* Align content in the center horizontally */
+}
+.container1 {
+    max-width: 800px;
+    margin: 3px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add position relative for absolute positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+.location {
+    float: right;
+    color: #888; /* Optional: Adjust color to your preference */
 }
 
-.header {
-    text-align: center;
+/* Adjustments for horizontal lines */
+.horizontal-line {
+    border-bottom: 2px solid black;
     margin-bottom: 20px;
 }
 
-.name {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.contact {
-    font-size: 16px;
-    color: #666;
-}
-
+/* Centering sections */
 .section {
-    margin-bottom: 30px;
-}
-
-.section h2 {
-    font-size: 18px;
-}
-
-.section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.section li {
-    margin-bottom: 10px;
-}
-
-.section .title {
-    font-weight: bold;
-}
-
-.section .date {
-    font-style: italic;
-}
-
-.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
-.skills h2 {
-    font-size: 18px;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    display: inline-block;
-    margin-right: 10px;
+.section h2 {
     margin-bottom: 10px;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+}
+
+/* Adjustments for educational items */
+.education-item p {
+    margin: 5px 0;
+}
+
+/* Adjustments for extra-curricular items */
+.extra-curricular-item p {
+    margin: 5px 0;
 }
